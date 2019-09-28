@@ -1,0 +1,21 @@
+<% include ../header %>
+<div align= "center">
+        <h3>Add an Employee:</h3> <br><br>
+<form action="/insert_employee" method="POST">
+<input type="text" placeholder="Id" name="employee_id"
+    title="Employee Id"><br><br>
+<input type="text" placeholder="Name" name="employee_name"
+    title="Employee Name"><br><br>
+<input type="text" placeholder="Designation" name="designation"
+    title="Designation"><br><br><br>
+<button type="submit" class="btn btn-primary" style='margin-right:25px'>Save</button>
+<a href="/"><button type="button" class="btn btn-primary">Go Back</button></a><br><br>
+</form>
+
+</div>
+<style>
+div{
+    min-height: 500px
+}
+</style>
+<% include ../footer %>

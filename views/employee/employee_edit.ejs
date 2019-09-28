@@ -1,0 +1,23 @@
+<% include ../header %>
+
+<div align= "center">
+<h3>Edit an Employee:</h3> <br><br>
+<form action="/update_employee/<%= record._id %>" method="POST">
+    <input type="text" placeholder="Id" name="employee_id"
+        title="Employee Id" value="<%= record._id %>" readonly> <br><br>
+    <input type="text" placeholder="Name" name="employee_name"
+        title="Employee Name" value="<%= record.name %>"> <br><br>
+    <input type="text" placeholder="Designation" name="employee_designation"
+        title="Designation" value="<%= record.designation %>"><br><br>
+    <button type="submit" class="btn btn-primary" style='margin-right:25px'>Save</button> 
+    <a href="/"><button type="button" class="btn btn-primary">Employee List Page</button></a>
+    </form>
+    <br><br><br><br>
+</div>
+<style>
+    div{
+        min-height: 500px
+    }
+</style>
+
+    <% include ../footer %>
